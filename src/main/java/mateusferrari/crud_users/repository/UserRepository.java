@@ -1,4 +1,7 @@
 package mateusferrari.crud_users.repository;
 
-public interface UserRepository {
+import mateusferrari.crud_users.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
